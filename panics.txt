@@ -1,0 +1,45 @@
+// objects too big or flew off too far
+
+$core::panicking::panic::h38cac710b5048ca0 (004fdc72:0x10d9cc)
+$rapier3d::geometry::broad_phase_multi_sap::sap_axis::SAPAxis::batch_insert::hd64a80bb64cb2bc7 (004fdc72:0x6b9f2)
+$rapier3d::geometry::broad_phase_multi_sap::broad_phase::BroadPhase::update_layers_and_find_pairs::h9fd81ca80597015f (004fdc72:0x65dc6)
+$rapier3d::geometry::broad_phase_multi_sap::broad_phase::BroadPhase::update::he7d39d5bdab1ab03 (004fdc72:0xb09c4)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::detect_collisions::habf8cccde91aa2ed (004fdc72:0xede3a)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::step_generic::hc1bf2e51c580c2b5 (004fdc72:0x2e287)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::step::heb43d6f30b910e00 (004fdc72:0xf0ec3)
+$rawphysicspipeline_step (004fdc72:0xef6a7)
+step (rapier_wasm3d.js:2008)
+A.step (physics_pipeline.ts:52)
+A.step (world.ts:171)
+(anonymous) (rapierWorker.js:20)
+
+// this one's rarer
+
+$core::panicking::assert_failed::h93d693a3708f3c3c (004fdc72:0x10ad7c)
+$rapier3d::geometry::broad_phase_multi_sap::sap_layer::SAPLayer::complete_removals::h5e07454591a20bad (004fdc72:0x8775a)
+$rapier3d::geometry::broad_phase_multi_sap::broad_phase::BroadPhase::complete_removals::hd7b9527a4ba41bfa (004fdc72:0xb22c1)
+$rapier3d::geometry::broad_phase_multi_sap::broad_phase::BroadPhase::update::he7d39d5bdab1ab03 (004fdc72:0xb09cc)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::detect_collisions::habf8cccde91aa2ed (004fdc72:0xede3a)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::step_generic::hc1bf2e51c580c2b5 (004fdc72:0x2e287)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::step::heb43d6f30b910e00 (004fdc72:0xf0ec3)
+$rawphysicspipeline_step (004fdc72:0xef6a7)
+step (rapier_wasm3d.js:2008)
+A.step (physics_pipeline.ts:52)
+A.step (world.ts:171)
+(anonymous) (rapierWorker.js:20)
+
+// objects too small
+
+$core::panicking::panic_bounds_check::haaec889ba18dd685 (004fdc72:0x10a7e1)
+$<parry3d::shape::convex_polyhedron::ConvexPolyhedron as parry3d::shape::polygonal_feature_map::PolygonalFeatureMap>::local_support_feature::hfb94b6e131fe9f01 (004fdc72:0xd8fe9)
+$<parry3d::query::default_query_dispatcher::DefaultQueryDispatcher as parry3d::query::query_dispatcher::PersistentQueryDispatcher<ManifoldData,ContactData>>::contact_manifold_convex_convex::h31e936039ed99961 (004fdc72:0x1def1)
+$<parry3d::query::default_query_dispatcher::DefaultQueryDispatcher as parry3d::query::query_dispatcher::PersistentQueryDispatcher<ManifoldData,ContactData>>::contact_manifolds::h84fd0df07f86cfe5 (004fdc72:0x5cb03)
+$rapier3d::geometry::narrow_phase::NarrowPhase::compute_contacts::he7c9a4ab0487a9b7 (004fdc72:0x70af1)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::detect_collisions::habf8cccde91aa2ed (004fdc72:0xedf14)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::step_generic::hc1bf2e51c580c2b5 (004fdc72:0x2a757)
+$rapier3d::pipeline::physics_pipeline::PhysicsPipeline::step::heb43d6f30b910e00 (004fdc72:0xf0ec3)
+$rawphysicspipeline_step (004fdc72:0xef6a7)
+step (rapier_wasm3d.js:2008)
+A.step (physics_pipeline.ts:52)
+A.step (world.ts:171)
+(anonymous) (rapierWorker.js:20)
