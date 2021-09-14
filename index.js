@@ -64,7 +64,7 @@ let message_handlers = {
     },
 
     world: () => {
-        rapierWorker.postMessage({type: 'start', args: 1000 / 60});
+        rapierWorker.postMessage({type: 'start'});
 
         fetch('./objects.json').then(response => response.json()).then(list => {
             for(let i = 0; i < num_objects; i++) {
